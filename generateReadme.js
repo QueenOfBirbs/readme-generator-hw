@@ -7,6 +7,25 @@ if (license === "unlicense")
 }
 }
 
+function tocLicense(license){
+if (license === "unlicense"){
+    return ""
+}
+else{
+    return `- [License(s)](#licenses)`
+}
+}
+
+function paragraphLicense(license){
+    if (license === "unlicense"){
+        return ""
+    }
+    else{
+return `## License: 
+ ${license}`
+    }
+    }
+
 function generateReadme(response) {
     return `
 ## ${response.title}
@@ -15,7 +34,7 @@ Table of Contents
 - [Description](#description)
 - [Installation](#installation)
 - [Usage](#usage)
-- [License(s)](#licenses)
+${tocLicense(response.license)}
 - [Contributing](#contribution)
 - [Test(s)](#test)
 - [Questions](#questions)
@@ -30,8 +49,7 @@ ${response.usage}
 ${response.contribution}
 ## Test Suggestions: 
 ${response.test}
-## License: 
-${response.license}
+${paragraphLicense(response.license)}
 ## Github: 
 www.github.com/${response.github}/
 ## Email Address: 
