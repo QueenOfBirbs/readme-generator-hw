@@ -3,7 +3,7 @@ if (license === "unlicense")
 {
     return ""
 } else{
-    return `[![License](https://img.shields.io/badge/License-${license}-blue.svg)](https://opensource.org/licenses/${license})`
+    return `![License](https://img.shields.io/badge/License-${license}-blue.svg)`
 }
 }
 
@@ -12,7 +12,7 @@ if (license === "unlicense"){
     return ""
 }
 else{
-    return `- [License(s)](#licenses)`
+    return `- [License(s)](#license)`
 }
 }
 
@@ -41,17 +41,18 @@ ${tocLicense(response.license)}
             
 ## Description: 
 ${response.description}
-## Installation Instructions: 
+## Installation: 
 ${response.installation}
-## Usage Guidelines: 
+## Usage: 
 ${response.usage}
-## Contribution Rules: 
+## Contribution: 
 ${response.contribution}
-## Test Suggestions: 
+## Test: 
 ${response.test}
 ${paragraphLicense(response.license)}
-## Github: 
-www.github.com/${response.github}/
+## Questions:
+##Github: 
+https://www.github.com/${response.github}/
 ## Email Address: 
 ${response.email}`;
 }
