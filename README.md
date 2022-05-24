@@ -30,9 +30,7 @@ THEN I am taken to the corresponding section of the README
 ---WHAT I GOT DONE---
 
 i was able to make the user get prompted for the required questions and have it succesfully saved into a new readme.md file.
-i wasn't able to make the badges work as i was totally confused what y'all meant by it and the github list of licenses i copied off of didn't have a badge for most of them on shield.io.
-i also wasn't able to format it alot? it's not super ugly but it's super basic. when i was googling it kept mentioning markdown however i couldn't find anyhting on how that worked with node.js.
-overall it works though! i'll probably stick to writing them myself though since i prefer that method.
+i was able to make badges show up and have the readme.md generate but look organized an pretty!
 
 
 ---EXAMPLES---
